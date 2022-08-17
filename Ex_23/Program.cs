@@ -3,7 +3,7 @@
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125 */
 
-Console.Write("Введите число: ");
+/* Console.Write("Введите число: ");
 int cube = Convert.ToInt32(Console.ReadLine());
 void cubeData(int[] cube)
 {
@@ -27,4 +27,14 @@ void printArr(int[] coll)
 }
 int[] arr = new int[cube + 1];
 cubeData(arr);
-printArr(arr);
+printArr(arr); */
+
+//Упрощение
+
+Console.Write("Введите число больше 0: ");
+int number = Convert.ToInt32(Console.ReadLine());
+if (number < 1) Console.Write("Введено некорректное значение");
+for (int i = 0; i < number; i++)
+{
+    Console.Write(Math.Pow(i+1, 3) + "; ");
+}
